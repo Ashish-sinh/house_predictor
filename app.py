@@ -4,24 +4,9 @@ import matplotlib.pyplot as plt
 import streamlit  as st 
 import pickle 
 
-# dataset = pickle.load(open('house_dataset.pkl','rb')) 
-# scaler = pickle.load(open('scaler.pkl','rb')) 
-# model = pickle.load(open('regression_model.pkl','rb')) 
-
-import os
-
-# Get the directory path of the current script
-base_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Construct absolute file paths
-dataset_path = os.path.join(base_dir, 'house_dataset.pkl')
-scaler_path = os.path.join(base_dir, 'scaler.pkl')
-model_path = os.path.join(base_dir, 'regression_model.pkl')
-
-# Load the datasets using absolute file paths
-dataset = pickle.load(open(dataset_path, 'rb'))
-scaler = pickle.load(open(scaler_path, 'rb'))
-model = pickle.load(open(model_path, 'rb'))
+dataset = pickle.load(open('house_dataset.pkl','rb')) 
+scaler = pickle.load(open('scaler.pkl','rb')) 
+model = pickle.load(open('regression_model.pkl','rb')) 
 
 
 st.title('🏠 House Price Predictor') 
