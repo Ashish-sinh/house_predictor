@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import streamlit  as st 
 import pickle 
 
-dataset = pickle.load(open('house_dataset.pkl','rb')) 
-scaler = pickle.load(open('scaler.pkl','rb')) 
-model = pickle.load(open('regression_model.pkl','rb')) 
+dataset = pickle.load(open('house_predictor/house_dataset.pkl','rb')) 
+scaler = pickle.load(open('house_predictor/scaler.pkl','rb')) 
+model = pickle.load(open('house_predictor/regression_model.pkl','rb')) 
 
 
 st.title('🏠 House Price Predictor') 
