@@ -17,9 +17,9 @@ st.set_page_config (
 st.title('🏠 House Price Predictor') 
 with st.sidebar :
         st.image('https://miro.medium.com/v2/resize:fit:1024/1*Juv1bpp5--0Fl8cA4EmTPw.jpeg')
-        st.subheader('🔮 Know Your Home's Tomorrow: Get Ahead with our House Price Predictor! 🏡 Trust our Smart Forecasting for Confident Property Moves. 🚀') 
+        st.subheader("🔮 Know Your Home's Tomorrow: Get Ahead with our House Price Predictor! 🏡 Trust our Smart Forecasting for Confident Property Moves. 🚀") 
         st.write('Predict the Price of Your House by Providing Information about it..') 
-        st.link_button('GitHub Link : Source Code' ,url ='https://github.com/Ashish-sinh/Heart-Attack-predictor') 
+        st.link_button('GitHub Link : Source Code' ,url ='https://github.com/Ashish-sinh/house_predictor') 
         
 st.write('Please Enter Below Details To predict the Price of Your House')
 st.image('download.jpeg') 
