@@ -57,4 +57,4 @@ scaled_input = scaler.transform(my_input)
 output = model.predict(scaled_input) 
 
 if st.button('Predict House Price') : 
-    st.title(f'Predicted House Price in $ : {output[0]* 10000}')
+    st.title(f'Predicted House Price in $ : %.2f' % {output[0]* 10000})
