@@ -43,9 +43,8 @@ AveRooms = averooms.number_input('Enter the Average Number of Rooms' , min_value
 AveBedrms= avebedrms.number_input('Enter the Average Number of BedRooms' , min_value= 1.0 ,  max_value= 33.0,step = 2.0 )
 
 Population = st.number_input('Enter the Population ' , min_value= dataset.Population.values.min() ,  max_value= dataset.Population.values.max() ,step = 50.0 )
-AveOccup = st.number_input('Enter the Average Number of HouseHold Members' , min_value= dataset.AveOccup.values.min() ,  max_value= dataset.AveOccup.values.max() ,step = .50 )
+AveOccup = st.number_input('Enter the Average Number of HouseHold Members' , min_value= 1.0 ,  max_value= 1230.0 ,step = 2.0 )
 
-st.write(dataset.AveOccup.values.max()) 
 latitude ,longitude = st.columns(2) 
 Latitude = latitude.slider('Enter the Latitude Income' , min_value= dataset.Latitude.values.min() ,  max_value= dataset.Latitude.values.max())
 Longitude = longitude.slider('Enter the Longitude Income' , min_value= dataset.Longitude.values.min() ,  max_value= dataset.Longitude.values.max()) 
