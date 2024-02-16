@@ -39,8 +39,8 @@ Median_income = st.number_input('Enter the Median Income' , min_value= dataset.M
 HouseAge = st.number_input('Enter the House Age ' , min_value= dataset.HouseAge.values.min() ,  max_value= dataset.HouseAge.values.max() ,step = 10.0 )
 
 averooms , avebedrms  = st.columns(2) 
-AveRooms = averooms.number_input('Enter the Average Number of Rooms' , min_value= 1 ,  max_value= 140 ,step = 3.0 )
-AveBedrms= avebedrms.number_input('Enter the Average Number of BedRooms' , min_value= 1 ,  max_value= 33 ,step = 2.0 )
+AveRooms = averooms.number_input('Enter the Average Number of Rooms' , min_value= 1.0,  max_value= 140.0 ,step = 3.0 )
+AveBedrms= avebedrms.number_input('Enter the Average Number of BedRooms' , min_value= 1.0 ,  max_value= 33.0,step = 2.0 )
 
 Population = st.number_input('Enter the Population ' , min_value= dataset.Population.values.min() ,  max_value= dataset.Population.values.max() ,step = 50.0 )
 AveOccup = st.number_input('Enter the Average Number of HouseHold Members' , min_value= dataset.AveOccup.values.min() ,  max_value= dataset.AveOccup.values.max() ,step = .50 )
